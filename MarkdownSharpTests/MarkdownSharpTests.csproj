@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MarkdownSharpTests</RootNamespace>
     <AssemblyName>MarkdownSharpTests</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
@@ -94,12 +94,6 @@
     <None Include="source\perl\License.text" />
     <None Include="source\perl\Markdown.101.pl" />
     <None Include="source\perl\Markdown.102b8.pl" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\MarkdownSharp\MarkdownSharp.csproj">
-      <Project>{37619116-CCE8-465A-8B1F-081CA53364BB}</Project>
-      <Name>MarkdownSharp</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="lib\log4net.dll" />
@@ -247,6 +241,12 @@
       <ProductName>Windows Installer 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MarkdownSharp.Standard\MarkdownSharp.Standard.csproj">
+      <Project>{d26c3b53-0fab-49c2-9674-70c859bca868}</Project>
+      <Name>MarkdownSharp.Standard</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

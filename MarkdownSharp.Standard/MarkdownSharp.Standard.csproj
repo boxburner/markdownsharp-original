@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.4</TargetFramework>
+    <RootNamespace>MarkdownSharp</RootNamespace>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Authors>Cedric Tallichet</Authors>
+    <Company>BurningBox S.A.</Company>
+    <PackageProjectUrl>https://github.com/boxburner/markdownsharp-original</PackageProjectUrl>
+    <Description>StackEchange's MarkdownSharp version targeting .net standard</Description>
+    <RepositoryUrl>https://github.com/boxburner/markdownsharp-original</RepositoryUrl>
+    <RepositoryType>GIT</RepositoryType>
+    <PackageTags>markdown dotnet .net standard core</PackageTags>
+  </PropertyGroup>
+
+</Project>

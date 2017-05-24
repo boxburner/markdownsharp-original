@@ -8,27 +8,9 @@ namespace MarkdownSharpTests
     public class ConfigTest
     {
         [Test]
-        public void TestLoadFromConfiguration()
-        {
-            var settings = ConfigurationManager.AppSettings;
-            settings.Set("Markdown.AutoHyperlink", "true");
-            settings.Set("Markdown.AutoNewlines", "true");
-            settings.Set("Markdown.EmptyElementSuffix", ">");
-            settings.Set("Markdown.LinkEmails", "false");
-            settings.Set("Markdown.StrictBoldItalic", "true");
-            
-            var markdown = new Markdown(true);
-            Assert.AreEqual(true, markdown.AutoHyperlink);
-            Assert.AreEqual(true, markdown.AutoNewLines);
-            Assert.AreEqual(">", markdown.EmptyElementSuffix);
-            Assert.AreEqual(false, markdown.LinkEmails);
-            Assert.AreEqual(true, markdown.StrictBoldItalic);
-        }
-
-        [Test]
         public void TestNoLoadFromConfigFile()
         {
-            foreach (var markdown in new[] {new Markdown(), new Markdown(false)})
+            foreach (var markdown in new[] {new Markdown(), new Markdown()})
             {
                 Assert.AreEqual(false, markdown.AutoHyperlink);
                 Assert.AreEqual(false, markdown.AutoNewLines);
